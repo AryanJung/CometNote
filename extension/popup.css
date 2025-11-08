@@ -1,0 +1,141 @@
+/* popup.css */
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 320px;
+  padding: 15px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #82aaff;
+  user-select: none;
+}
+
+#noteList {
+  list-style: none;
+  padding: 0;
+  max-height: 320px;
+  overflow-y: auto;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background-color: #1e1e2f;
+  box-shadow: 0 0 10px #3b3b5c;
+}
+
+.note {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.note:last-child {
+  border-bottom: none;
+}
+
+.quote {
+  margin: 6px 0 4px;
+  font-weight: 500;
+  color: #cdd6f4;
+  font-size: 0.95rem;
+}
+
+.sourceLink {
+  display: block;
+  color: #82aaff;
+  font-size: 0.82rem;
+  margin-bottom: 6px;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.sourceLink:hover {
+  text-decoration: underline;
+}
+
+.comment {
+  width: 100%;
+  background-color: #292940;
+  border: none;
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 40px;
+  color: #e0e0e0;
+  padding: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  transition: background-color 0.2s ease;
+  margin-top: 6px;
+}
+
+.comment:focus {
+  background-color: #3b3b5c;
+  outline: none;
+}
+
+.deleteBtn {
+  margin-top: 6px;
+  padding: 6px 12px;
+  background-color: #f38ba8;
+  color: #121212;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.deleteBtn:hover {
+  background-color: #e05575;
+}
+
+#fullNotesBtn,
+#loadSharedNotesBtn,
+#syncNotesBtn,
+#createGroupBtn {
+  padding: 10px;
+  background-color: #89b4fa;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #121212;
+  margin-top: 6px;
+}
+
+#fullNotesBtn:hover,
+#loadSharedNotesBtn:hover,
+#syncNotesBtn:hover,
+#createGroupBtn:hover {
+  background-color: #6282d6;
+}
+
+#currentGroupDisplay {
+  background-color: #292940;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  user-select: none;
+  box-shadow: 0 0 8px #3b3b5c;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e2f;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #82aaff;
+  border-radius: 8px;
+  border: 2px solid #1e1e2f;
+}
